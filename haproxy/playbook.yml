@@ -1,0 +1,8 @@
+---
+
+- hosts: haproxy
+  become: true
+  gather_facts: true
+  roles:
+    - install_haproxy
+    - configure_haproxy

@@ -1,0 +1,5 @@
+- name: Install haproxy
+  apt:
+    name: haproxy
+    state: latest
+    update_cache: yes

@@ -1,0 +1,15 @@
+- name: Enable haproxy  init script
+  replace:
+    path: /etc/default/haproxy
+    regexp: 'ENABLED=0'
+    replace: 'ENABLED=1'
+
+
+- name: Update haproxy config
+  template:
+    src: templates/haproxy.cfg
+    dest: /etc/haproxy/haproxy.cfg
+    backup: yes
+  notify:
+    - restart haproxy   
+            

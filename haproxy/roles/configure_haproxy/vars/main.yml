@@ -1,0 +1,4 @@
+haproxy_algorithm: roundrobin
+haproxy_backend_servers:
+  - {name: node-1-kube, ip: 192.168.50.11, port: 80}
+  - {name: node-2-kube, ip: 192.168.50.12, port: 80}
