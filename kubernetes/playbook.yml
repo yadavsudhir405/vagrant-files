@@ -1,0 +1,28 @@
+---
+
+- hosts: masters
+  become: true
+  gather_facts: true
+  roles:
+    - components
+    - docker
+    - swap
+    - cluster
+    - kubelet
+    - kubeadm
+    - kubeconfig
+    - iptables
+    - calico
+    - token
+
+- hosts: nodes
+  become: true
+  gather_facts: true
+  roles:
+    - components
+    - docker
+    - swap
+    - cluster
+    - kubelet
+    - iptables
+    - join

@@ -1,0 +1,4 @@
+*.log
+join-command
+setIp.sh
+setKubeCtl.sh
