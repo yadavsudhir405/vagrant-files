@@ -2,4 +2,5 @@
 join-command
 setIp.sh
 setKubeCtl.sh
-calico.yml
+calico.yaml
+config
